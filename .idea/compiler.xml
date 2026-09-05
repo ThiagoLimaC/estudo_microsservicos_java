@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms-pessoas" />
+        <module name="config-server" />
+        <module name="gateway" />
+        <module name="eureka" />
+        <module name="ms-produto" />
+      </profile>
+      <profile name="Annotation profile for ms-autenticacao" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
+        </processorPath>
+        <module name="ms-autenticacao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="controle-de-pessoas" target="21" />
+      <module name="controle-pessoas" target="21" />
+      <module name="zuul-service" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
+      <module name="controle-de-pessoas" options="-parameters" />
+      <module name="controle-pessoas" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="ms-autenticacao" options="-parameters" />
+      <module name="ms-pessoas" options="-parameters" />
+      <module name="ms-produto" options="-parameters" />
+      <module name="zuul-service" options="-parameters" />
+    </option>
+  </component>
+</project>
